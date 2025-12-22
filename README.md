@@ -19,7 +19,7 @@ Ce projet, bien qu’étant une initiative personnelle, est rendu public pour :
 - **Partager une architecture propre et réutilisable**, adaptée aux projets Flutter modulaires.
 - **Servir de référence ou d’inspiration** à d’autres développeurs souhaitant créer une application e-commerce.
 
-status : En cours de developpement
+Status : En cours de developpement
 
 ---
 

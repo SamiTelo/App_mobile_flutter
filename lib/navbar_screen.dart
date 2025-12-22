@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mini_ecommerce/models/screen_data.dart';
+import 'package:mini_ecommerce/data/screen_data.dart';
 import 'package:mini_ecommerce/constants.dart';
 
 class BottomNavBar extends StatefulWidget {
