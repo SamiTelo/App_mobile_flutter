@@ -4,8 +4,8 @@ import 'package:mini_ecommerce/models/product_model.dart';
 final List<Product> products = [
   Product(
     id: 'p1',
-    title: 'Wireless Headphone',
-    description: 'High quality wireless headphone with noise cancellation.',
+    title: 'Wireless Headphones',
+    description: 'High-quality wireless headphones designed to deliver an immersive audio experience. Equipped with advanced noise-cancellation technology, these headphones reduce background noise and let you enjoy clear, powerful sound wherever you are. The ergonomic design ensures long-lasting comfort, while the long-life battery allows you to listen to music, watch movies, or take calls all day without interruption.',
     image: 'assets/images/img3.png',
     price: 120.0,
     rate: 4.5,

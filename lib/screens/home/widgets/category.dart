@@ -25,14 +25,12 @@ class Category extends StatelessWidget {
           // image circulaire + titre
           return Column(
             children: [
-
               // Container circulaire pour l’image de la catégorie
               Container(
                 height: 65,
                 width: 65,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,  // Forme circulaire
-
                   // Image chargée depuis les assets
                   image: DecorationImage(
                     image: AssetImage(category.image),
@@ -41,7 +39,6 @@ class Category extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),  // Petit espace vertical entre l’image et le texte
-
               // Titre de la catégorie
               Text(
                 category.title,

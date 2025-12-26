@@ -52,4 +52,10 @@ app.*.map.json
 # Allow example file
 !.env.example
 
+# Android native build cache
+.cxx/
+.android/
+.gradle/
+
+
 

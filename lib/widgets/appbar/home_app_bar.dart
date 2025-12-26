@@ -5,12 +5,15 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({super.key});
 
   @override
-  Size get preferredSize => const Size.fromHeight(100);
+  Size get preferredSize => const Size.fromHeight(80);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      surfaceTintColor: Colors.transparent,
       toolbarHeight: 100,
       title: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16),
@@ -20,7 +23,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
               style: IconButton.styleFrom(
                 backgroundColor: contentColor,
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(16),
               ),
               onPressed: () {},
               icon: Image.asset(
@@ -31,7 +34,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
               style: IconButton.styleFrom(
                 backgroundColor: contentColor,
-                padding: const EdgeInsets.all(18),
+                padding: const EdgeInsets.all(14),
               ),
               onPressed: () {},
               icon: const Icon(

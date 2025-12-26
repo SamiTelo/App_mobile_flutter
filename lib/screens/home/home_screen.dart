@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Top Categorie", style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),),
+                  Text("Top Categories", style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),),
                   Text("See all",  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: primaryColor),),
                 ],),
               SizedBox(height: 25),
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Text("Special for you", style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),),
                 Text("See all",  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: primaryColor),),
               ],),
-
+              SizedBox(height: 25),
               GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
