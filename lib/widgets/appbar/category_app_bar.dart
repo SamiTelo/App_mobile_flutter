@@ -16,7 +16,7 @@ class CategoryAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: IconButton(
         icon: const Icon(Icons.arrow_back),
         onPressed: () {
-          Navigator.pop(context);
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const BottomAppBar()));
         },
       ),
 

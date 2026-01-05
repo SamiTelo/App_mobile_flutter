@@ -67,7 +67,7 @@ final List<Product> products = [
     category: 'Fashion',
     colors: [
       Colors.black,
-      Colors.orange,
+      Colors.yellow,
       Colors.green,
     ],
   ),
@@ -83,8 +83,9 @@ final List<Product> products = [
     seller: 'TechWear',
     category: 'Electronics',
     colors: [
-      Colors.black,
+      Colors.pink,
       Colors.grey,
+      Colors.cyan,
     ],
   ),
   Product(
@@ -100,7 +101,8 @@ final List<Product> products = [
     category: 'Electronics',
     colors: [
       Colors.black,
-      Colors.grey,
+      Colors.brown,
+      Colors.lightGreen,
     ],
   ),
 ];

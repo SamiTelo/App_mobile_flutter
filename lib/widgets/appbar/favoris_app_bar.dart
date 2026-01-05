@@ -11,13 +11,20 @@ class FavorisAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: primaryColor,
-      title: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text('Favoris'),
-          Icon(Icons.favorite),
-        ],
+      backgroundColor: contentColor,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      surfaceTintColor: Colors.transparent,
+      centerTitle: true,
+      // ---------------------------------------
+      // title     → contenu central
+      //---------------------------------------
+      title: const Text(
+        "Favorites",
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+        ),
       ),
     );
   }

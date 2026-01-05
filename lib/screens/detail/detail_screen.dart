@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_ecommerce/constants.dart';
 import 'package:mini_ecommerce/models/product_model.dart';
+import 'package:mini_ecommerce/screens/detail/widgets/add_cart.dart';
 import 'package:mini_ecommerce/screens/detail/widgets/description.dart';
 import 'package:mini_ecommerce/screens/detail/widgets/detail_app_bar.dart';
 import 'package:mini_ecommerce/screens/detail/widgets/image_slider_detail.dart';
@@ -21,7 +22,11 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: contentColor,
+      // ------------------------------------------------
       // for add to cart, icon and quantity
+      // ----------------------------------------------
+      floatingActionButton: AddCart(product: widget.product),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: SafeArea(
           child: SingleChildScrollView(
            child: Padding(
@@ -32,7 +37,7 @@ class _DetailScreenState extends State<DetailScreen> {
                  // -------------------------------------------
                  // For back button share and favorite
                  // -------------------------------------------
-                 DetailAppBar(),
+                 DetailAppBar(product: widget.product),
                  // --------------------------------------
                  // For detail image slider
                  // -----------------------------------------
@@ -101,11 +106,11 @@ class _DetailScreenState extends State<DetailScreen> {
                                    color: currentColors == index? Colors.white : widget.product.colors[index] ,
                                    border: currentColors == index? Border.all(color: widget.product.colors[index],) : null
                                ),
-                               padding: currentColors == index? const EdgeInsets.all(2) : null,
+                               padding: currentColors == index? const EdgeInsets.all(3) : null,
                                margin: EdgeInsets.only(right: 10 ),
                                child: Container(
-                                 width: 35,
-                                 height: 35,
+                                 width: 15,
+                                 height: 15,
                                  decoration: BoxDecoration(
                                    shape: BoxShape.circle,
                                    color: widget.product.colors[index],

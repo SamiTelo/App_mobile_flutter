@@ -13,14 +13,13 @@ class Category extends StatelessWidget {
     return SizedBox(
       height: 110,
       child: ListView.separated(
-        scrollDirection: Axis.horizontal, // Scroll horizontal (classique pour les catégories e-commerce)
+        scrollDirection: Axis.horizontal, // Scroll horizontal
         itemCount: categories.length, // Nombre total de catégories à afficher
         separatorBuilder: (context, index) => const SizedBox(width: 20), // Espacement constant entre chaque item
 
         // Construction dynamique de chaque item
         itemBuilder: (context, index) {
           final category = categories[index]; // Récupération de la catégorie courante
-
           // Chaque catégorie est affichée verticalement :
           // image circulaire + titre
           return Column(
@@ -40,13 +39,7 @@ class Category extends StatelessWidget {
               ),
               const SizedBox(height: 6),  // Petit espace vertical entre l’image et le texte
               // Titre de la catégorie
-              Text(
-                category.title,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              Text(category.title, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold,),),
             ],
           );
         },
