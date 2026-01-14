@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart' hide SearchBar;
+import 'package:mini_ecommerce/constants.dart';
 import 'package:mini_ecommerce/data/product_data.dart';
 import 'package:mini_ecommerce/screens/home/widgets/category.dart';
 import 'package:mini_ecommerce/screens/home/widgets/images_slider.dart';
 import 'package:mini_ecommerce/screens/home/widgets/products_card.dart';
-import 'package:mini_ecommerce/screens/home/widgets/search_bar.dart' ;
-import 'package:mini_ecommerce/constants.dart';
+import 'package:mini_ecommerce/screens/home/widgets/search_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,10 +14,19 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // état local pour le slider
   int currentSlider = 0;
+
+  // 👉 catégorie sélectionnée
+  String selectedCategory = 'All';
+
   @override
   Widget build(BuildContext context) {
+    // 👉 filtrage des produits
+    final filteredProducts = selectedCategory == 'All'
+        ? products
+        : products
+        .where((product) => product.category == selectedCategory)
+        .toList();
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -26,14 +35,11 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //-----------------------------------
-              // For search bar
-              //---------------------------------
-              SearchBar(),
-              SizedBox(height: 25),
-              //------------------------------------
-              // For images slider
-              //---------------------------------------
+              //---------------- Search Bar ----------------
+              const SearchBar(),
+              const SizedBox(height: 25),
+
+              //---------------- Slider ----------------
               ImagesSlider(
                 currentSlider: currentSlider,
                 onChange: (index) {
@@ -42,44 +48,81 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
               ),
-              SizedBox(height: 25),
-              //-------------------------------------
-              // For category selection
-              //-------------------------------------------
+              const SizedBox(height: 25),
+
+              //---------------- Categories title ----------------
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Top Categories", style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),),
-                  Text("See all",  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: primaryColor),),
-                ],),
-              SizedBox(height: 25),
-              Category(),
-              SizedBox(height: 25),
-              //-------------------------------------
-              // For shopping items
-              //-------------------------------------------
+                children: const [
+                  Text(
+                    "Top Categories",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+                  ),
+                  Text(
+                    "See all",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 25),
+
+              //---------------- Categories ----------------
+              Category(
+                selectedCategory: selectedCategory,
+                onCategorySelected: (category) {
+                  setState(() {
+                    selectedCategory = category;
+                  });
+                },
+              ),
+              const SizedBox(height: 25),
+
+              //---------------- Products title ----------------
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                Text("Special for you", style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),),
-                Text("See all",  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: primaryColor),),
-              ],),
-              SizedBox(height: 25),
+                children: const [
+                  Text(
+                    "Special for you",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+                  ),
+                  Text(
+                    "See all",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 25),
+
+              //---------------- Products Grid ----------------
               GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.78,crossAxisSpacing: 14, mainAxisSpacing: 14,),
-                itemCount: products.length,
+                gridDelegate:
+                const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.78,
+                  crossAxisSpacing: 14,
+                  mainAxisSpacing: 14,
+                ),
+                itemCount: filteredProducts.length,
                 itemBuilder: (context, index) {
-                   return ProductsCard(product: products[index]);
+                  return ProductsCard(
+                    product: filteredProducts[index],
+                  );
                 },
               ),
-
             ],
           ),
         ),
       ),
     );
-
   }
 }

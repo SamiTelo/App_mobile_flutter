@@ -6,7 +6,7 @@ class CartProvider extends ChangeNotifier {
 
   List<Product> get cart => _cart;
 
-  /// AJOUTER AU PANIER (AVEC QUANTITÉ)
+  /// AJOUTER AU PANIER (avec quantité)
   void addToCart(Product product, {int quantity = 1}) {
     final index = _cart.indexWhere((item) => item.id == product.id);
 
@@ -15,9 +15,7 @@ class CartProvider extends ChangeNotifier {
         quantity: _cart[index].quantity + quantity,
       );
     } else {
-      _cart.add(
-        product.copyWith(quantity: quantity),
-      );
+      _cart.add(product.copyWith(quantity: quantity));
     }
     notifyListeners();
   }
@@ -28,7 +26,7 @@ class CartProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// + / -
+  /// + / - quantité
   void incrementQtn(int index) {
     _cart[index] = _cart[index].copyWith(
       quantity: _cart[index].quantity + 1,
@@ -45,7 +43,7 @@ class CartProvider extends ChangeNotifier {
     }
   }
 
-  /// TOTAL ARTICLES
+  /// TOTAL ARTICLES (pour badge)
   int get totalItems =>
       _cart.fold(0, (sum, item) => sum + item.quantity);
 

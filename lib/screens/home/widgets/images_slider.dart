@@ -60,7 +60,7 @@ class _ImagesSliderState extends State<ImagesSlider> {
           height: 200,
           width: double.infinity,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(28),
             child: PageView.builder(
               controller: _controller,
               itemCount: _images.length,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mini_ecommerce/constants.dart';
-import 'package:mini_ecommerce/navbar_screen.dart';
 import 'package:mini_ecommerce/provider/navigation_provider.dart';
 import 'package:provider/provider.dart';
 

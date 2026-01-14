@@ -36,25 +36,19 @@ class _AddCartState extends State<AddCart> {
             /// QUANTITY
             _quantitySelector(),
 
-            /// ADD TO CART WITH SCALE ANIMATION
+            /// ADD TO CART
             GestureDetector(
               onTapDown: (_) => setState(() => scale = 0.95),
               onTapUp: (_) => setState(() => scale = 1.0),
               onTapCancel: () => setState(() => scale = 1.0),
               onTap: () {
-                cartProvider.addToCart(
-                  widget.product,
-                  quantity: quantity,
-                );
-
+                cartProvider.addToCart(widget.product, quantity: quantity);
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
                     content: Text(
-                      "Successfully added!",
+                      "Produit ajouté au panier",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
+                          fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                     backgroundColor: Colors.green,
                     duration: Duration(seconds: 1),
@@ -76,10 +70,9 @@ class _AddCartState extends State<AddCart> {
                   child: const Text(
                     "Add to cart",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
                   ),
                 ),
               ),
@@ -90,7 +83,7 @@ class _AddCartState extends State<AddCart> {
     );
   }
 
-  /// EXTRACTION DE LA QUANTITÉ SELON LE CHOIX
+  /// QUANTITY SELECTOR
   Widget _quantitySelector() {
     return Container(
       height: 40,
@@ -103,18 +96,15 @@ class _AddCartState extends State<AddCart> {
           IconButton(
             iconSize: 18,
             onPressed: () {
-              if (quantity > 1) {
-                setState(() => quantity--);
-              }
+              if (quantity > 1) quantity--;
+              setState(() {});
             },
             icon: const Icon(Icons.remove, color: Colors.white),
           ),
           Text(
             quantity.toString(),
             style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+                fontWeight: FontWeight.bold, color: Colors.white),
           ),
           IconButton(
             iconSize: 18,

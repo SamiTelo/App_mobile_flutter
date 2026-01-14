@@ -12,7 +12,7 @@ final List<Product> products = [
     review: 120,
     quantity: 50,
     seller: 'SoundPro',
-    category: 'Electronics',
+    category: 'Gaming',
     colors: [
       Colors.black,
       Colors.blue,
@@ -47,7 +47,7 @@ final List<Product> products = [
     review: 210,
     quantity: 100,
     seller: 'SportMax',
-    category: 'Fashion',
+    category: 'Watches',
     colors: [
       Colors.black,
       Colors.orange,
@@ -64,7 +64,7 @@ final List<Product> products = [
     review: 210,
     quantity: 100,
     seller: 'SportMax',
-    category: 'Fashion',
+    category: 'Clothes',
     colors: [
       Colors.black,
       Colors.yellow,
@@ -81,7 +81,7 @@ final List<Product> products = [
     review: 89,
     quantity: 30,
     seller: 'TechWear',
-    category: 'Electronics',
+    category: 'Shoes',
     colors: [
       Colors.pink,
       Colors.grey,
@@ -98,7 +98,7 @@ final List<Product> products = [
     review: 89,
     quantity: 30,
     seller: 'TechWear',
-    category: 'Electronics',
+    category: 'Accessories',
     colors: [
       Colors.black,
       Colors.brown,

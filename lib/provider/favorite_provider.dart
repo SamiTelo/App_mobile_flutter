@@ -28,11 +28,6 @@ class FavoriteProvider extends ChangeNotifier {
     return _favorites.contains(product);
   }
 
-  /// Vider les favoris (optionnel)
-  void clearFavorites() {
-    _favorites.clear();
-    notifyListeners();
-  }
 
   /// Helper comme ton CartProvider
   static FavoriteProvider of(BuildContext context) {

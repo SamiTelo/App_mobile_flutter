@@ -9,42 +9,59 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
+    return  AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
       scrolledUnderElevation: 0,
       surfaceTintColor: Colors.transparent,
       toolbarHeight: 100,
-      title: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              style: IconButton.styleFrom(
-                backgroundColor: contentColor,
-                padding: const EdgeInsets.all(16),
-              ),
-              onPressed: () {},
-              icon: Image.asset(
-                "assets/images/icon.png",
-                height: 20,
-              ),
-            ),
-            IconButton(
-              style: IconButton.styleFrom(
-                backgroundColor: contentColor,
-                padding: const EdgeInsets.all(14),
-              ),
-              onPressed: () {},
-              icon: const Icon(
-                Icons.notifications_outlined,
-                size: 25,
-              ),
-            ),
+
+      title: ShaderMask(
+        shaderCallback: (bounds) => const LinearGradient(
+          colors: [
+            Color(0xFF081A2D),
+            Color(0xFFFF7A18),
           ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ).createShader(bounds),
+        child: const Text(
+          "Cartify",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white, // obligatoire avec ShaderMask
+          ),
         ),
       ),
+
+
+      // Icônes à droite
+      actions: [
+        Padding(
+          padding: const EdgeInsets.only(right: 8),
+          child: IconButton(
+            icon: const Icon(Icons.share_outlined),
+            style: IconButton.styleFrom(
+              backgroundColor: contentColor,
+              padding: const EdgeInsets.all(14),
+            ),
+            onPressed: () {},
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(right: 16),
+          child: IconButton(
+            icon: const Icon(Icons.favorite_border),
+            style: IconButton.styleFrom(
+              backgroundColor: contentColor,
+              padding: const EdgeInsets.all(14),
+            ),
+            onPressed: () {},
+          ),
+        ),
+      ],
+
     );
   }
 }
