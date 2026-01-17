@@ -27,7 +27,6 @@ class Product {
     required this.colors,
   });
 
-  /// ⭐ SOLUTION ICI
   Product copyWith({int? quantity}) {
     return Product(
       id: id,

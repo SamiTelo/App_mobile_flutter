@@ -19,7 +19,7 @@ class ProfileCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               image: const DecorationImage(
-                image: AssetImage("assets/images/slider.png"),
+                image: AssetImage("assets/images/img37.jpg"),
                 fit: BoxFit.cover,
               ),
             ),

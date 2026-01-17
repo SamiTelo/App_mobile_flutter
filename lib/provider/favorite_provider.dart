@@ -29,7 +29,7 @@ class FavoriteProvider extends ChangeNotifier {
   }
 
 
-  /// Helper comme ton CartProvider
+  /// Helper comme CartProvider
   static FavoriteProvider of(BuildContext context) {
     return context.watch<FavoriteProvider>();
   }

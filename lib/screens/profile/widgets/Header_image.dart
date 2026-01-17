@@ -14,7 +14,7 @@ class ProfileHeader extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               image: const DecorationImage(
-                image: AssetImage("assets/images/slider.png"),
+                image: AssetImage("assets/images/img37.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,7 +32,7 @@ class ProfileHeader extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Flutter V2.5",
+                  "Flutter V3.38",
                   style: TextStyle(color: Colors.white),
                 ),
               ],

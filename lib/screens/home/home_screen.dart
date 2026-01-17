@@ -16,12 +16,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int currentSlider = 0;
 
-  // 👉 catégorie sélectionnée
+  //  catégorie sélectionnée
   String selectedCategory = 'All';
 
   @override
   Widget build(BuildContext context) {
-    // 👉 filtrage des produits
+    // filtrage des produits
     final filteredProducts = selectedCategory == 'All'
         ? products
         : products

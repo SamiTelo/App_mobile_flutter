@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CategoryModel {
   final String title;
   final String image;
-  final Color color; // 👈 couleur propre à la catégorie
+  final Color color;
 
   const CategoryModel({
     required this.title,
