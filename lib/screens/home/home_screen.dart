@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:mini_ecommerce/constants.dart';
 import 'package:mini_ecommerce/data/product_data.dart';
+import 'package:mini_ecommerce/provider/navigation_provider.dart';
 import 'package:mini_ecommerce/screens/home/widgets/category.dart';
 import 'package:mini_ecommerce/screens/home/widgets/images_slider.dart';
 import 'package:mini_ecommerce/screens/home/widgets/products_card.dart';
 import 'package:mini_ecommerce/screens/home/widgets/search_bar.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -53,17 +55,23 @@ class _HomeScreenState extends State<HomeScreen> {
               //---------------- Categories title ----------------
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     "Top Categories",
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
                   ),
-                  Text(
-                    "See all",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: primaryColor,
+                  InkWell(
+                    onTap: () {
+                      // On change l'index du BottomNavigationBar pour aller à Categories (index 0)
+                      context.read<NavigationProvider>().changeIndex(0);
+                    },
+                    child: const Text(
+                      "See all",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: primaryColor,
+                      ),
                     ),
                   ),
                 ],

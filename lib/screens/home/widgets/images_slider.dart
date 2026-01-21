@@ -23,8 +23,8 @@ class _ImagesSliderState extends State<ImagesSlider> {
 
   final List<String> _images = [
     "assets/images/slider.png",
-    "assets/images/slider1.jpg",
-    "assets/images/slider3.png",
+    "assets/images/img36.jpg",
+    "assets/images/img23.jpg",
   ];
 
   @override

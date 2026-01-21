@@ -9,7 +9,7 @@ const List<CategoryModel> categories = [
   ),
   CategoryModel(
     title: 'Shoes',
-    image: 'assets/images/slider1.jpg',
+    image: 'assets/images/img18.jpg',
     color: Colors.green,
   ),
   CategoryModel(

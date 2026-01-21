@@ -23,7 +23,7 @@ class _AddCartState extends State<AddCart> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Container(
-        height: 70,
+        height: 80,
         margin: const EdgeInsets.only(bottom: 14),
         padding: const EdgeInsets.symmetric(horizontal: 15),
         decoration: BoxDecoration(
@@ -60,7 +60,7 @@ class _AddCartState extends State<AddCart> {
                 duration: const Duration(milliseconds: 120),
                 curve: Curves.easeOut,
                 child: Container(
-                  height: 48,
+                  height: 50,
                   padding: const EdgeInsets.symmetric(horizontal: 50),
                   decoration: BoxDecoration(
                     color: primaryColor,
@@ -86,7 +86,7 @@ class _AddCartState extends State<AddCart> {
   /// QUANTITY SELECTOR
   Widget _quantitySelector() {
     return Container(
-      height: 40,
+      height: 45,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: Colors.white, width: 2),

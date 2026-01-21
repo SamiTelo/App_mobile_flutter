@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mini_ecommerce/constants.dart';
 import 'package:mini_ecommerce/data/profile_data.dart';
-import 'package:mini_ecommerce/screens/profile/widgets/Header_image.dart';
-import 'package:mini_ecommerce/screens/profile/widgets/Menu_Section.dart';
-import 'package:mini_ecommerce/screens/profile/widgets/Profile_Card.dart';
-import 'package:mini_ecommerce/screens/profile/widgets/Section_Title.dart';
+import 'package:mini_ecommerce/screens/profile/widgets/header_image.dart';
+import 'package:mini_ecommerce/screens/profile/widgets/menu_section.dart';
+import 'package:mini_ecommerce/screens/profile/widgets/profile_card.dart';
+import 'package:mini_ecommerce/screens/profile/widgets/section_title.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

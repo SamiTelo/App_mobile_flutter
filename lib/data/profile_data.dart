@@ -20,6 +20,12 @@ final navigationItems = [
     color: Colors.pink,
     onTap: () {},
   ),
+  MenuItemModel(
+    title: "Compte",
+    icon: Icons.person,
+    color: Colors.purple,
+    onTap: () {},
+  ),
 ];
 
 final settingsItems = [

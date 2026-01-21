@@ -26,7 +26,7 @@ Status : En cours de developpement
 ## Fonctionnalités principales
 
 - Affichage des produits avec images, prix et descriptions
-- Recherche et filtrage des produits
+- Recherche et filtrage des produits (à venir)
 - Gestion du panier (ajout, suppression, quantité)
 - Gestion des favoris
 - Navigation fluide entre les écrans (Home, Détail produit, Panier, Favoris)

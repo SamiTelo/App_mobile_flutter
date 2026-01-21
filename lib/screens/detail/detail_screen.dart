@@ -104,8 +104,8 @@ class _DetailScreenState extends State<DetailScreen> {
                             onTap: () => setState(() => currentColors = index),
                             child: AnimatedContainer(
                               duration: const Duration(milliseconds: 300),
-                              width: 40,
-                              height: 40,
+                              width: 30,
+                              height: 30,
                               margin: const EdgeInsets.only(right: 10),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
