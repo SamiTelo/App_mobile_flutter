@@ -5,7 +5,7 @@ final List<Product> products = [
   Product(
     id: 'p1',
     title: 'Playstation 5',
-    description: 'La PlayStation 5 offre une expérience de jeu de nouvelle génération avec des graphismes ultra-réalistes, des temps de chargement quasi instantanés grâce au SSD ultra-rapide, et le retour haptique innovant de la manette DualSense qui vous plonge au cœur de l’action. Compatible avec les jeux PS4, la PS5 combine performance, immersion et design futuriste pour satisfaire les gamers les plus exigeants.',
+    description: 'The PlayStation 5 delivers a next-generation gaming experience with ultra-realistic graphics, near-instant loading times thanks to its ultra-fast SSD, and the innovative haptic feedback of the DualSense controller that immerses you in the heart of the action. Compatible with PS4 games, the PS5 combines performance, immersion, and futuristic design to satisfy even the most demanding gamers.',
     image: 'assets/images/img19.png',
     price: 120.0,
     rate: 4.5,
@@ -18,7 +18,7 @@ final List<Product> products = [
   Product(
     id: 'p2',
     title: 'Puma Shoes',
-    description: 'Conçues pour allier confort et style, les chaussures Pluma offrent un maintien optimal pour vos pieds tout au long de la journée. Leur semelle légère et amortissante permet de marcher ou courir avec aisance, tandis que leur design moderne s’adapte aussi bien aux tenues sportives qu’urbaines. Idéales pour le quotidien ou les activités sportives, elles allient performance et élégance.',
+    description: 'Designed to combine comfort and style, Pluma shoes provide optimal support for your feet throughout the day. Their lightweight, cushioned sole allows you to walk or run with ease, while their modern design fits both sporty and urban outfits. Ideal for everyday wear or sports activities, they combine performance and elegance.',
     image: 'assets/images/img5.png',
     price: 85.0,
     rate: 4.2,
@@ -31,7 +31,7 @@ final List<Product> products = [
   Product(
     id: 'p3',
     title: 'Clothes',
-    description: 'Découvrez notre collection de vêtements modernes alliant style et confort. Que ce soit pour le quotidien, le sport ou les occasions spéciales, chaque pièce est conçue avec soin pour vous offrir qualité, durabilité et élégance. Adoptez un look unique tout en restant à l’aise toute la journée.',
+    description: 'Discover our collection of modern clothing that combines style and comfort. Whether for everyday wear, sports, or special occasions, each piece is carefully designed to offer quality, durability, and elegance. Adopt a unique look while staying comfortable all day long.',
     image: 'assets/images/img2.png',
     price: 65.0,
     rate: 4.7,
@@ -44,7 +44,7 @@ final List<Product> products = [
   Product(
     id: 'p4',
     title: 'Xbox Series XS',
-    description: 'Profitez d’un contrôle précis et confortable avec cette manette de jeu ergonomique. Compatible avec plusieurs consoles et PC, elle offre des boutons réactifs, une prise en main optimale et un design adapté aux longues sessions de jeu. Idéale pour tous les gamers, elle améliore l’expérience de jeu grâce à sa précision et sa durabilité.',
+    description: 'Enjoy precise and comfortable control with this ergonomic game controller. Compatible with multiple consoles and PCs, it offers responsive buttons, an optimal grip, and a design suited for long gaming sessions. Ideal for all gamers, it enhances the gaming experience with its precision and durability.',
     image: 'assets/images/img40.png',
     price: 70.0,
     rate: 4.6,
@@ -57,7 +57,7 @@ final List<Product> products = [
   Product(
     id: 'p5',
     title: 'Puma Shoes',
-    description: 'Conçues pour allier confort et style, les chaussures Pluma offrent un maintien optimal pour vos pieds tout au long de la journée. Leur semelle légère et amortissante permet de marcher ou courir avec aisance, tandis que leur design moderne s’adapte aussi bien aux tenues sportives qu’urbaines. Idéales pour le quotidien ou les activités sportives, elles allient performance et élégance.',
+    description: 'Designed to combine comfort and style, Pluma shoes provide optimal support for your feet throughout the day. Their lightweight, cushioned sole allows you to walk or run with ease, while their modern design fits both sporty and urban outfits. Ideal for everyday wear or sports activities, they combine performance and elegance.',
     image: 'assets/images/img4.png',
     price: 80.0,
     rate: 4.1,
@@ -70,7 +70,7 @@ final List<Product> products = [
   Product(
     id: 'p6',
     title: 'Clothes',
-    description: 'Découvrez notre collection de vêtements modernes alliant style et confort. Que ce soit pour le quotidien, le sport ou les occasions spéciales, chaque pièce est conçue avec soin pour vous offrir qualité, durabilité et élégance. Adoptez un look unique tout en restant à l’aise toute la journée.',
+    description: 'Discover our collection of modern clothing that combines style and comfort. Whether for everyday wear, sports, or special occasions, each piece is carefully designed to offer quality, durability, and elegance. Adopt a unique look while staying comfortable all day long.',
     image: 'assets/images/img2.png',
     price: 78.0,
     rate: 4.3,
@@ -83,7 +83,7 @@ final List<Product> products = [
   Product(
     id: 'p7',
     title: 'Playstation 4',
-    description: 'La PlayStation 4 offre une expérience de jeu immersive avec des graphismes haute définition, un catalogue de jeux varié et des fonctionnalités sociales innovantes. Sa manette DualShock 4 ergonomique permet un contrôle précis et intuitif, tandis que ses services en ligne enrichissent le gameplay avec du multijoueur et des contenus exclusifs. Parfaite pour les gamers à la recherche de divertissement et de performance.',
+    description: 'The PlayStation 4 offers an immersive gaming experience with high-definition graphics, a wide variety of games, and innovative social features. Its ergonomic DualShock 4 controller provides precise and intuitive control, while its online services enhance gameplay with multiplayer options and exclusive content. Perfect for gamers looking for entertainment and performance.',
     image: 'assets/images/img17.png',
     price: 82.0,
     rate: 4.4,
@@ -148,7 +148,7 @@ final List<Product> products = [
   Product(
     id: 'p12',
     title: 'Iphone 16',
-    description: 'L’iPhone 16 allie design élégant et puissance avancée pour une expérience utilisateur exceptionnelle. Équipé d’un écran haute résolution, d’un processeur ultra-rapide et d’un système photo innovant, il permet de capturer des images nettes, de profiter de jeux fluides et d’applications performantes. Sa batterie longue durée et ses fonctionnalités connectées en font un compagnon idéal au quotidien.',
+    description: 'The iPhone 16 combines elegant design and advanced power for an exceptional user experience. Equipped with a high-resolution display, an ultra-fast processor, and an innovative camera system, it allows you to capture sharp images, enjoy smooth gaming, and run high-performance applications. Its long-lasting battery and connected features make it an ideal everyday companion.',
     image: 'assets/images/img15.png',
     price: 60.0,
     rate: 4.3,
@@ -161,7 +161,7 @@ final List<Product> products = [
   Product(
     id: 'p13',
     title: 'Sandisk Flash Drive',
-    description: 'Stockez et transférez vos fichiers rapidement et en toute sécurité avec cette carte USB Sandisk de 128 Go. Compacte et légère, elle est idéale pour transporter documents, photos, vidéos et fichiers importants. Compatible avec la plupart des ordinateurs et appareils équipés d’un port USB, elle combine performance, fiabilité et praticité au quotidien.',
+    description: 'Store and transfer your files quickly and securely with this 128GB Sandisk USB flash drive. Compact and lightweight, it is ideal for carrying documents, photos, videos, and important files. Compatible with most computers and devices equipped with a USB port, it combines performance, reliability, and everyday convenience.',
     image: 'assets/images/img12.png',
     price: 95.0,
     rate: 4.5,
@@ -174,7 +174,7 @@ final List<Product> products = [
   Product(
     id: 'p14',
     title: 'Clé USB 3.0',
-    description: 'Stockez et transférez vos fichiers rapidement et en toute sécurité',
+    description: 'Store and transfer your files quickly and securely.',
     image: 'assets/images/img14.png',
     price: 110.0,
     rate: 4.6,
@@ -187,7 +187,7 @@ final List<Product> products = [
   Product(
     id: 'p15',
     title: 'AirPods sans fil',
-    description: 'Profitez d’un son clair et immersif avec ces AirPods sans fil. Grâce à leur connexion automatique et leur autonomie longue durée, ils vous accompagnent toute la journée pour écouter de la musique, passer des appels ou profiter de vos contenus multimédias. Leur design compact et ergonomique assure un confort optimal pour toutes les activités.',
+    description: 'Enjoy clear and immersive sound with these wireless AirPods. Thanks to their automatic connection and long battery life, they accompany you throughout the day to listen to music, make calls, or enjoy multimedia content. Their compact and ergonomic design ensures optimal comfort for all activities.',
     image: 'assets/images/img9.png',
     price: 150.0,
     rate: 4.7,
@@ -239,7 +239,7 @@ final List<Product> products = [
   Product(
     id: 'p19',
     title: 'Camera',
-    description: 'Capturez vos moments les plus précieux avec un appareil photo numérique haute performance. Avec des images nettes, des couleurs éclatantes et une mise au point rapide, il est idéal pour les amateurs comme pour les professionnels. Compact et facile à utiliser, il vous accompagne partout pour immortaliser vos souvenirs avec précision et qualité.',
+    description: 'Capture your most precious moments with a high-performance digital camera. With sharp images, vibrant colors, and fast autofocus, it is ideal for both amateurs and professionals. Compact and easy to use, it goes with you everywhere to preserve your memories with precision and quality.',
     image: 'assets/images/img20.png',
     price: 40.0,
     rate: 4.3,
