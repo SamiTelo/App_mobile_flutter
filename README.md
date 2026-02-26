@@ -73,47 +73,17 @@ assets/
 Packages utilisés
 flutter/material.dart
 
-provider (pour la gestion d’état, si utilisé)
+provider (pour la gestion d’état)
 
-flutter_swiper_view (pour les sliders, si utilisé)
+flutter_swiper_view (pour les sliders)
 
-Autres packages spécifiques à ton projet
-
-Contribuer
-Fork le projet
-
-Créer une branche pour vos modifications :
-
-bash
-Copier le code
-git checkout -b feature/ma-fonctionnalité
-Commit et push :
-
-bash
-Copier le code
-git commit -m "Ajouter une fonctionnalité"
-git push origin feature/ma-fonctionnalité
-Créer une pull request
 
 Licence
 Ce projet est sous licence MIT.
 
 Auteur
-Sami Telo
+Samuel TIEMTORE
 
-Contact : [ton.email@example.com]
-
-yaml
-Copier le code
+Contact : samueltiemtore10@gmail.com
 
 ---
-
-### Étapes pour l’ajouter et pousser sur GitHub
-
-1. Crée le fichier `README.md` à la racine de ton projet et colle le contenu ci-dessus.  
-2. Dans ton terminal :
-
-```bash
-git add README.md
-git commit -m "Ajout du README"
-git push origin main

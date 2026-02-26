@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_ecommerce/models/profile_model.dart';
-import 'package:mini_ecommerce/screens/profile/widgets/%20Menu_Tile.dart';
+import 'package:mini_ecommerce/screens/profile/widgets/menu_tile.dart';
+
 
 class MenuSection extends StatelessWidget {
   final List<MenuItemModel> items;

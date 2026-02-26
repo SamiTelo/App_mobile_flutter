@@ -30,7 +30,7 @@ class ProfileCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Sami Telo",
+                  "Telo",
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w800,

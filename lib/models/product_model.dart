@@ -8,7 +8,7 @@ class Product {
   final double price;
   final double rate;
   final int review;
-  int quantity; // ⚠️ NON final
+  int quantity;
   final String seller;
   final String category;
   final List<Color> colors;

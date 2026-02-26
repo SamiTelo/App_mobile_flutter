@@ -17,7 +17,7 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: contentColor,
 
-      // ✅ BottomSheet affiché uniquement si le panier n’est pas vide
+      // BottomSheet affiché uniquement si le panier n’est pas vide
       bottomSheet: cartList.isNotEmpty ? const CheckOutBox() : null,
 
       body: SafeArea(
