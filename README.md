@@ -75,7 +75,6 @@ flutter/material.dart
 
 provider (pour la gestion d’état)
 
-flutter_swiper_view (pour les sliders)
 
 
 Licence
