@@ -41,18 +41,16 @@ Status : En cours de developpement
 <td><img src="assets/screenshots/home.png" style="width:200px;" alt="Home"/></td>
 <td><img src="assets/screenshots/home2.png" style="width:200px;" alt="Home 2"/></td>
 <td><img src="assets/screenshots/home3.png" style="width:200px;" alt="Home 3"/></td>
+<td><img src="assets/screenshots/category.png" style="width:200px;" alt="Category"/></td>
 </tr>
 <tr>
 <td><img src="assets/screenshots/cart.png" style="width:200px;" alt="Cart"/></td>
 <td><img src="assets/screenshots/cart-vide.png" style="width:200px;" alt="Cart vide"/></td>
-<td><img src="assets/screenshots/category.png" style="width:200px;" alt="Category"/></td>
-</tr>
-<tr>
 <td><img src="assets/screenshots/detail-product.png" style="width:200px;" alt="Detail Product"/></td>
 <td><img src="assets/screenshots/detail-product2.png" style="width:200px;" alt="Detail Product 2"/></td>
-<td><img src="assets/screenshots/favoris.png" style="width:200px;" alt="Favoris"/></td>
 </tr>
 <tr>
+<td><img src="assets/screenshots/favoris.png" style="width:200px;" alt="Favoris"/></td>
 <td><img src="assets/screenshots/favoris-vide.png" style="width:200px;" alt="Favoris vide"/></td>
 <td><img src="assets/screenshots/profil1.png" style="width:200px;" alt="Profil 1"/></td>
 <td><img src="assets/screenshots/profil2.png" style="width:200px;" alt="Profil 2"/></td>
