@@ -34,6 +34,32 @@ Status : En cours de developpement
 
 ---
 
+## Screenshots
+
+<table>
+<tr>
+<td><img src="assets/screenshots/home.png" style="width:200px;" alt="Home"/></td>
+<td><img src="assets/screenshots/home2.png" style="width:200px;" alt="Home 2"/></td>
+<td><img src="assets/screenshots/home3.png" style="width:200px;" alt="Home 3"/></td>
+</tr>
+<tr>
+<td><img src="assets/screenshots/cart.png" style="width:200px;" alt="Cart"/></td>
+<td><img src="assets/screenshots/cart-vide.png" style="width:200px;" alt="Cart vide"/></td>
+<td><img src="assets/screenshots/category.png" style="width:200px;" alt="Category"/></td>
+</tr>
+<tr>
+<td><img src="assets/screenshots/detail-product.png" style="width:200px;" alt="Detail Product"/></td>
+<td><img src="assets/screenshots/detail-product2.png" style="width:200px;" alt="Detail Product 2"/></td>
+<td><img src="assets/screenshots/favoris.png" style="width:200px;" alt="Favoris"/></td>
+</tr>
+<tr>
+<td><img src="assets/screenshots/favoris-vide.png" style="width:200px;" alt="Favoris vide"/></td>
+<td><img src="assets/screenshots/profil1.png" style="width:200px;" alt="Profil 1"/></td>
+<td><img src="assets/screenshots/profil2.png" style="width:200px;" alt="Profil 2"/></td>
+</tr>
+</table>
+
+---
 ## Installation
 
 1. Cloner le repository :
@@ -50,25 +76,6 @@ Lancer l’application sur un émulateur ou appareil connecté :
 bash
 Copier le code
 flutter run
-Structure du projet
-bash
-Copier le code
-lib/
-├── constants.dart       # Contient toutes les constantes globales de l'application (couleurs, styles, padding, etc.)
-├── navbar_screen.dart   # Gère la logique et l'affichage du BottomNavigationBar principal
-├── main.dart            # Point d'entrée de l'application Flutter, initialise l'app et le routing
-├── screens/             # Dossier contenant tous les écrans de l'application
-│   ├── home/            # Écran d'accueil et ses composants spécifiques
-│   ├── cart/            # Écran du panier et gestion des items ajoutés
-│   ├── profile/         # Écran de profile utilisateur
-│   ├── detail/          # Écran de détail produit
-│   └── favoris/         # Écran des produits favoris
-├── widgets/             # Dossier des widgets réutilisables dans toute l'application
-│   └── appbar/          # Composants spécifiques pour les AppBars personnalisées
-└── models/              # Modèles de données (ex: Product, User, CartItem) utilisés dans l'application
-assets/
-├── images/
-├── font/ 
 
 Packages utilisés
 flutter/material.dart
