@@ -1,7 +1,5 @@
 # Mini App E-Commerce Flutter
 
-[![Flutter](https://img.shields.io/badge/Flutter?logo=flutter)](https://flutter.dev/)
-
 ## Description
 Mini App E-Commerce (Cartify) est une application mobile développée avec **Flutter** permettant de parcourir des produits, les ajouter au panier, gérer les favoris et passer des commandes. Cette application est conçue comme un **prototype léger** d’une boutique en ligne.
 
