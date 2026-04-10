@@ -1,6 +1,6 @@
 # Mini App E-Commerce Flutter
 
-[![Flutter](https://img.shields.io/badge/Flutter-2.20-blue?logo=flutter)](https://flutter.dev/)
+[![Flutter](https://img.shields.io/badge/Flutter?logo=flutter)](https://flutter.dev/)
 
 ## Description
 Mini App E-Commerce (Cartify) est une application mobile développée avec **Flutter** permettant de parcourir des produits, les ajouter au panier, gérer les favoris et passer des commandes. Cette application est conçue comme un **prototype léger** d’une boutique en ligne.
@@ -10,14 +10,11 @@ Mini App E-Commerce (Cartify) est une application mobile développée avec **Flu
 
 L’objectif de ce projet est de développer une **application mobile e-commerce complète** en Flutter, permettant de gérer :
 
-- La liste de produits
+- La liste des produits
 - Le panier des utilisateurs
 - Les produits favoris
-
-Ce projet, bien qu’étant une initiative personnelle, est rendu public pour :
-
-- **Partager une architecture propre et réutilisable**, adaptée aux projets Flutter modulaires.
-- **Servir de référence ou d’inspiration** à d’autres développeurs souhaitant créer une application e-commerce.
+- les commandes
+- etc...
 
 Status : En cours de developpement
 
